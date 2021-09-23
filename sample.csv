@@ -1,0 +1,30 @@
+USR_ID,USR_NAME,USR_MANAGER_ID,DEPARTMENT,JOB_DESCRIPTION,CITY,USR_DEPARTMENT_NAME,CO
+ST_CENTER,JOBCODE_NAME,LINE_OF_BUSINESS,LINE_OF_BUSINESS_SUBGROUP,CHIEF_YES_NO,USR_EM
+P_TYPE,USR_DISPLAY_NAME,MANAGER_NAME,IS_ACTIVE
+nicol.juratovac,Nicol Juratovac,ai-kyung.chung,Corporation Services,Corporation Services,Pierre,Corporation
+Services,PWR_F3G,Lineman,Business Technology,Asset Management,Yes,Non-Employee,Nicol Juratovac,Ai-Kyung
+Chung,Y
+elizabeth.dayrit,Elizabeth Dayrit,ai-kyung.chung,Corporation Services,Corporation Services,Pierre,Corporation
+Services,TR_HN3,Troubleman,Business Technology,Asset Management,No,Non-Employee,Elizabeth Dayrit,Ai-Kyung
+Chung,Y
+john.payne,John Payne,ai-kyung.chung,Corporation Services,Corporation Services,New Orleans,Corporation
+Services,SOL_ER2,Service Representitive,Business Technology,Asset Management,Yes,Non-Employee,John
+Payne,Ai-Kyung Chung,Y
+christopher.anderson,Christopher Anderson,ai-kyung.chung,Corporation Services,Corporation
+Services,Akron,Corporation Services,PWR_QQ8,Troubleman,Business Technology,Asset
+Management,Yes,Non-Employee,Christopher Anderson,Ai-Kyung Chung,Y
+agustin.larue,Agustin Larue,ai-kyung.chung,Corporation Services,Corporation Services,San Jose,Corporation
+Services,TR_HN3,Equipment Mechanic,Business Technology,Asset Management,No,Non-Employee,Agustin
+Larue,Ai-Kyung Chung,Y
+michael.campanali,Michael Campanali,ai-kyung.chung,Corporation Services,Corporation Services,San
+Francisco,Corporation Services,CON_TP1,Troubleman,Business Technology,Distribution Operations
+AA,Yes,Employee,Michael Campanali,Ai-Kyung Chung,Y
+rebecca.liu,Rebecca Liu,ai-kyung.chung,Corporation Services,Corporation Services,Albuquerque,Corporation
+Services,CON_SD9,Troubleman,Business Technology,Energy Solutions,Yes,Non-Employee,Rebecca Liu,Ai-Kyung
+Chung,Y
+david.shinn,David Shinn,ai-kyung.chung,Corporation Services,Corporation Services,Fontana,Corporation
+Services,FIN_W3R,Service Representitive II,Business Technology,Environmental
+Management,No,Non-Employee,David Shinn,Ai-Kyung Chung,Y
+paul.crawford,Paul Crawford,ai-kyung.chung,Corporation Services,Corporation Services,Orlando,Corporation
+Services,PWR_F3G,Service Representitive,Business Technology,Environmental Management,Yes,Non-Employee,Paul
+Crawford,Ai-Kyung Chung,Y
