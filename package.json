@@ -1,0 +1,30 @@
+{
+  "name": "codingchallengefr",
+  "version": "1.0.0",
+  "description": "Coding challenge based in NodeJS with Express, MongoDB and Passport.",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryan-m-may/codingChallengeFR.git"
+  },
+  "author": "Ryan May",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryan-m-may/codingChallengeFR/issues"
+  },
+  "homepage": "https://github.com/ryan-m-may/codingChallengeFR#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^4.1.2",
+    "mongoose": "^6.0.7",
+    "passport": "^0.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.2"
+  }
+}
