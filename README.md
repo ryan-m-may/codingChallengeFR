@@ -20,25 +20,23 @@ Unit tests:
 
 # Installation Instructions
 
-Install MongoDB Community per these instructions:
+The following instructions outline the steps taken to install MongoDB in [this official documentation](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/).
 
-https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
+---
+1. Install the Xcode command-line tools by running the following command in your macOS Terminal:
 
-Install the Xcode command-line tools by running the following command in your macOS Terminal:
+    `xcode-select --install`
 
-> xcode-select --install
+2. Install Homebrew using these [official instructions](https://brew.sh/#install).
 
-Install Brew using these official instructions:
 
-https://brew.sh/#install
+    * Install the MongoDB Homebrew Tap:
 
-Install the MongoDB Homebrew Tap:
+      `brew tap mongodb/brew`
 
-> brew tap mongodb/brew
+    * Install MongoDB:
 
-Install MongoDB:
-
-> brew install mongodb-community
+      `brew install mongodb-community`
 
 
 
@@ -47,18 +45,23 @@ Install MongoDB:
 
 # Getting Started
 
-Install MongoDB Community Edition
 To run MongoDB as a macOS service, run:
-* brew services start mongodb-community
-Stop MongoDB macOS service:
-* brew services stop mongodb-community
 
-To verify MongoDB is running:
-* brew services list
-You should see the service mongodb-community listed as started.
+`brew services start mongodb-community`
 
-Start Mongo
-* mongo
+To stop MongoDB macOS service, run:
+
+`brew services stop mongodb-community`
+
+To verify MongoDB is running, run:
+
+`brew services list`
+
+> You should see the service `mongodb-community` listed as `started`.
+
+To start Mongo, run:
+
+`mongo`
 
 # Technologies
 
