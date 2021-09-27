@@ -4,7 +4,10 @@
   "description": "Coding challenge based in NodeJS with Express, MongoDB and Passport.",
   "main": "server.js",
   "scripts": {
-    "test": "test"
+    "test": "jest",
+    "wipeEmployees": "mongosh employeeDB --eval 'db.employees.drop()'",
+    "wipeUsers": "mongosh employeeDB --eval 'db.users.drop()'",
+    "createCollection": "mongosh employeeDB DBTemplates/createDB.js"
   },
   "repository": {
     "type": "git",
@@ -17,14 +20,26 @@
   },
   "homepage": "https://github.com/ryan-m-may/codingChallengeFR#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "fast-csv": "^4.3.6",
+    "jsonwebtoken": "^8.5.1",
     "mongodb": "^4.1.2",
-    "mongoose": "^6.0.7",
-    "passport": "^0.4.1"
+    "multer": "^1.4.3",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.24.2"
+    "eslint-plugin-import": "^2.24.2",
+    "jest": "^27.2.2",
+    "nodemon": "^2.0.13",
+    "supertest": "^6.1.6"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
