@@ -1,23 +1,30 @@
 # codingChallengeFR
 
 ## Technologies:
-NodeJS
-
-ExpressJS
+NodeJS / ExpressJS
 
 MongoDB
-* Mongoose?
+
+Passport / jsonwebtoken
+* Local Strategy and JWT Strategy
+* Route AuthN/AuthZ
+* bcryptjs used for hashing passwords
+
+Jest & Supertest
+* Testing Endpoints
+
+dotenv
+* Storing secrets like JWT Secret and Google Cloud secrets
+
+Multer
+* Middleware for express to handle file uploads
 
 fast-csv
+* Parsing CSV files
 
-Passport
-
-Jest?
-
-Mocha/Chai?
-
-Unit tests:
-* test endpoints
+ESLint
+* Enforcing clean code
+* Conforming to readable style
 
 # Installation Instructions
 
@@ -86,7 +93,7 @@ Index the collection:
 > NOTE: If you use `show dbs` at this point, `employeeDB` won't show up. That's because there's nothing in it right now.
 
 Create a user `mongosh [database name] [filepath]`
-> EXAMPLE: In my case, the command is: `mongosh employeeDB /Users/ryanmay/Desktop/codingChallengeFR/DBTemplates/createUser.js`
+> EXAMPLE: In my case, the command is: `mongosh employeeDB /Users/ryanmay/Desktop/codingChallengeFR/server/DBTemplates/createUser.js`
 
 ## Google Credentials
 
@@ -109,7 +116,3 @@ The steps I will be highlighting follow the procudere from these official [googl
     * Click `Create` and make sure to save the `Client ID` and `Client Secret` before closing the window.
 3. Add your Google credentials to the `config.env` file.
     * You'll need the `Client ID` and `Client Secret` obtained from the Google Cloud Console in step 2.
-
-# Technologies
-
-Frameworks and libraries
