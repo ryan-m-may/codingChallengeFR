@@ -1,5 +1,16 @@
 # codingChallengeFR
 
+This is a back-end project using Node with Express. There are 3 routes, `/login`, `/upload`, and `/identites`. I used `local` and `jwt` PassportJS strategies to protect the routes, and Jest and Postman for testing the endpoints.
+
+# Table of Contents
+
+## [Technologies]()
+## [Installation Instructions]()
+## [Getting Started]()
+* ### [MongoDB]()
+* ### [Google Credentials]()
+* ### [Postman]()
+
 ## Technologies:
 NodeJS / ExpressJS
 
@@ -116,3 +127,24 @@ The steps I will be highlighting follow the procudere from these official [googl
     * Click `Create` and make sure to save the `Client ID` and `Client Secret` before closing the window.
 3. Add your Google credentials to the `config.env` file.
     * You'll need the `Client ID` and `Client Secret` obtained from the Google Cloud Console in step 2.
+
+## Postman
+1.  To use this app with postman, you'll first have to use the `/register` route. This will create a user in the database that can be used for authentication.
+    * Make sure MongoDB is running before starting these steps.
+    * To use this route just use Postman to make a POST request to `http://localhost:3000/register`.
+2. Now that a user is established, make a POST request to `/login' using this JSON in the body:
+
+```
+{
+    "email": "test@example.com",
+    "password": "password"
+}
+```
+
+> The response is a JWT. Make sure to store this, it will be necessary for the `/upload` and `/identites` endponts.
+
+3. Under the `Auth` tab in Postman, select `Bearer Token` and place the JSON Web Token from step 2 in the token form.
+4. Make a POST request to `/upload` with the Bearer Token set. In the `body` section, select the `form-data` radio button. Add the key `csv` and click upload and select the `sample.csv` file that came with this repository.
+    * This will upload the values from the CSV file into MongoDB
+5. Make a GET request to `/identites` with the Bearer Token set.
+

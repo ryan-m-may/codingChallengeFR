@@ -26,6 +26,8 @@ app.post('/login', passport.authenticate('local', { session: false }), (req, res
   res.status(200).send(token);
 });
 
+// THIS ROUTE IS FOR TESTING ONLY
+// ONLY IMPLEMENTED FOR THE SAKE OF THIS CODING CHALLENGE
 app.get('/success', passport.authenticate('jwt', { session: false }), (req, res) => {
   res.status(200).send('happy day');
 });
@@ -33,7 +35,10 @@ app.get('/success', passport.authenticate('jwt', { session: false }), (req, res)
 // ROUTE IS FOR TESTING AND CREATING A DB USER
 // ONLY IMPLEMENTED FOR THE SAKE OF THIS CODING CHALLENGE
 app.post('/register', (req, res) => {
-  createUser(req.body.email, req.body.password);
+  createUser({
+    email: 'test@example.com',
+    password: 'password',
+  });
   res.status(200).send('ok');
 });
 
