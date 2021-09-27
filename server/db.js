@@ -72,7 +72,7 @@ const findUser = ({ email }) => (
     })
 );
 
-const createUser = (email, password) => {
+const createUser = ({ email, password }) => {
   const saltRounds = 10;
 
   client.connect()

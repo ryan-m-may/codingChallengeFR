@@ -4,6 +4,7 @@
   "description": "Coding challenge based in NodeJS with Express, MongoDB and Passport.",
   "main": "server.js",
   "scripts": {
+    "start": "nodemon startServer.js",
     "test": "jest",
     "wipeEmployees": "mongosh employeeDB --eval 'db.employees.drop()'",
     "wipeUsers": "mongosh employeeDB --eval 'db.users.drop()'",

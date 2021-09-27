@@ -109,7 +109,7 @@ Create a user `mongosh [database name] [filepath]`
 ## Google Credentials
 
 The steps I will be highlighting follow the procudere from these official [google docs](https://developers.google.com/identity/protocols/oauth2)
-1. Create a `config.env` file based on the `config.env.example` that I have provided.
+1. Create a `config.env` file based on the `config.env.example` that I have provided in `/server/config`.
     * Use the [dotenv](https://www.npmjs.com/package/dotenv) module for reference
     * You can just delete `.example` from the name of the `config.env.example` and it will work.
 2. Obtain OAuth 2.0 credentials from the [Google API Console](https://console.developers.google.com/).
@@ -127,6 +127,14 @@ The steps I will be highlighting follow the procudere from these official [googl
     * Click `Create` and make sure to save the `Client ID` and `Client Secret` before closing the window.
 3. Add your Google credentials to the `config.env` file.
     * You'll need the `Client ID` and `Client Secret` obtained from the Google Cloud Console in step 2.
+4. While you're in `config.env` go ahead and make up a string and save it in `JWT_SECRET`
+    * Example: `JWT_SECRET=deepDarkSecret`
+
+> MAKE SURE YOU EITHER CREATE A COPY OF `config.env.example` or delete `.example` from the file provided.
+
+## Starting the app
+
+1. Use `npm start` to get the app up and running.
 
 ## Postman
 1.  To use this app with postman, you'll first have to use the `/register` route. This will create a user in the database that can be used for authentication.
